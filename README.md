@@ -17,6 +17,20 @@ The project analyzes simulated Windows Security Event ID 4625 logs, identifies r
 - Detection focus: Multiple failed logins from the same source IP
 - Data source: Simulated Windows Security logs
 
+## Detection Result
+
+The detection script was tested locally using the simulated Windows Security Event Log dataset.
+
+- **Source IP:** `10.10.10.50`
+- **Failed login attempts:** `7`
+- **Detection threshold:** `5`
+- **Event ID:** `4625`
+- **Result:** Possible brute-force activity detected
+
+### Sample Detection Output
+
+![Brute-force detection result](./Screenshot%202026-10-01%20011102.png)
+
 ## Investigation
 
 The investigation focuses on:
@@ -52,3 +66,24 @@ brute-force-detector/
 ├── detection/
 ├── iocs/
 └── mitre/
+'''
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
